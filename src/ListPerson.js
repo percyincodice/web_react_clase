@@ -7,7 +7,7 @@ function ListPerson() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get("http://3.91.252.25:5000/api/person")
+    axios.get("https://c3939b3d2107.ngrok-free.app/api/person", {headers: {'ngrok-skip-browser-warning': 'true'}})
     .then(response => {
       console.log("datos del api", response.data);
       setListPerson(response.data)

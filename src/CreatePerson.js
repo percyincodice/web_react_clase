@@ -12,10 +12,6 @@ function CreatePerson() {
         e.preventDefault();
 
         try {
-            console.log('name', name);
-            console.log('lastname', lastname);
-            console.log('age', age);
-
             await axios.post("https://c3939b3d2107.ngrok-free.app/api/person", 
                 {
                     "name": name,
